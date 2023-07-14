@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css'; 
+
+html, body { 
+    height: 100%; 
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    overflow: hidden !important;
+}
+
+body { 
+    margin: 0; 
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 15px;
+}
+
+mat-icon{
+    cursor: pointer;
+}
+
+.footerContainer, 
+.headerContainer{
+    width: 100%;
+    padding: 0.5%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: thistle;
+    overflow: hidden !important;
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .menu {
+        margin: auto 5%;
+    }
+}
+
+.bodyContainer{
+    margin:5%;
+}

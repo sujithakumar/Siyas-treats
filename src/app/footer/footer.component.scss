@@ -1,0 +1,35 @@
+.footerContainer{
+    bottom: 0;
+    position: absolute;
+    .leftMenu{
+        display: flex;
+        width:49%;
+        justify-content: flex-start;
+
+        img{
+            height: 30px;
+        }
+
+        .location{
+            height: 25px;
+        }
+
+        div{
+            margin-right: 2%;
+        }
+    }
+
+    .rightMenu{
+        display: flex;
+        width:49%;
+        justify-content: flex-end;
+
+        img{
+
+        }
+        span{
+            margin-left: 1%;
+            font-size: 14px !important;
+        }
+    }
+}

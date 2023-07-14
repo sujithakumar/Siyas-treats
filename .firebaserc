@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ecommerce-48573": {
+      "hosting": {
+        "ecommerce": [
+          "ecommerce-48573"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ecommerce-48573"
+  }
+}

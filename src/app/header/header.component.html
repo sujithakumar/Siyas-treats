@@ -1,0 +1,96 @@
+<div class="headerContainer ">
+
+    <div class="leftMenu menu">
+        <span tabindex="0">
+            <a routerLinkActive="active" routerLink="/home">
+                <img src="../../assets/logo/logo.jpg" alt="logo" aria-label="logo">
+            </a>
+        </span>
+    </div>
+
+    <div class="mainMenu menu">
+        <span>
+            <a routerLinkActive="active" routerLink="/home">
+                Home
+            </a>
+        </span>
+        <span>
+            <a routerLinkActive="active" routerLink="/menu">
+                Menu
+            </a>
+        </span>
+        <span>
+            <a routerLinkActive="active" routerLink="/testimonies">
+                Testimonies
+            </a>
+        </span>
+        <span>
+            <a routerLinkActive="active" routerLink="/login" [matMenuTriggerFor]="moreMenu">
+                More
+            </a>
+        </span>
+       
+        <mat-menu #moreMenu="matMenu" xPosition="after">
+            <button mat-menu-item class="menuButton">
+                <a routerLinkActive="active" routerLink="/login">
+                    About Us
+                </a>
+            </button>
+            <button mat-menu-item class="menuButton">
+                <a routerLinkActive="active" routerLink="/login">
+                    Contact Us
+                </a>
+            </button>
+            <button mat-menu-item class="menuButton">
+                <a routerLinkActive="active" routerLink="/login">
+                    Terms of Service
+                </a>
+            </button>
+            <button mat-menu-item class="menuButton">
+                <a routerLinkActive="active" routerLink="/login">
+                    Privacy Policy
+                </a>
+            </button>
+        </mat-menu>
+
+    </div>
+
+
+    <div class="rightMenu menu">
+        <div class="profile">
+            <button [matMenuTriggerFor]="belowMenu">
+                <mat-icon class="material-icons-round" [matRippleDisabled]="true"> account_circle
+                </mat-icon>
+            </button>
+            <mat-menu #belowMenu="matMenu" xPosition="before">
+                <button mat-menu-item class="menuButton">
+                    <a routerLinkActive="active" routerLink="/login">Login / Sign up</a>
+                </button>
+                <button mat-menu-item class="menuButton">
+                    <a routerLinkActive="active" routerLink="/login">
+                        View Profile
+                    </a>
+                </button>
+                <button mat-menu-item class="menuButton">
+                    <a routerLinkActive="active" routerLink="/login">
+                        Admin Tool
+                    </a>
+                </button>
+                <button mat-menu-item class="menuButton">
+                    <a routerLinkActive="active" routerLink="/login">
+                        Log Out
+                    </a>
+                </button>
+            </mat-menu>
+        </div>
+
+        <div class="cart">
+            <button>
+                <mat-icon [matRippleDisabled]="true" class="material-icons-round">
+                    shopping_cart
+                </mat-icon>
+            </button>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,40 @@
+.headerContainer {
+    .leftMenu {
+        width: 20%;
+        justify-content: flex-start;
+        span {
+            a {
+                img {
+                    border-radius: 50%;
+                    height: 30%;
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    .mainMenu {
+        width: 60%;
+        span {
+            margin-right: 7%;
+        }
+    }
+
+    .rightMenu {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+
+        div {
+            margin: 0 2%;
+
+            button {
+                background-color: transparent;
+                border: 0;
+            }
+        }
+    }
+
+
+    
+}

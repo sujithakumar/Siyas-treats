@@ -1,0 +1,11 @@
+.landingpageContainer{
+    position: relative;
+    .landingPageBody{
+        min-height: 100vh; 
+        margin:0;
+
+        router-outlet{
+            margin: auto 3%;
+        }
+    }
+}
