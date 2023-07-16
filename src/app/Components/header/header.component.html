@@ -8,51 +8,8 @@
         </span>
     </div>
 
-    <div class="mainMenu menu">
-        <span>
-            <a routerLinkActive="active" routerLink="/home">
-                Home
-            </a>
-        </span>
-        <span>
-            <a routerLinkActive="active" routerLink="/menu">
-                Menu
-            </a>
-        </span>
-        <span>
-            <a routerLinkActive="active" routerLink="/testimonies">
-                Testimonies
-            </a>
-        </span>
-        <span>
-            <a routerLinkActive="active" routerLink="/login" [matMenuTriggerFor]="moreMenu">
-                More
-            </a>
-        </span>
-       
-        <mat-menu #moreMenu="matMenu" xPosition="after">
-            <button mat-menu-item class="menuButton">
-                <a routerLinkActive="active" routerLink="/login">
-                    About Us
-                </a>
-            </button>
-            <button mat-menu-item class="menuButton">
-                <a routerLinkActive="active" routerLink="/login">
-                    Contact Us
-                </a>
-            </button>
-            <button mat-menu-item class="menuButton">
-                <a routerLinkActive="active" routerLink="/login">
-                    Terms of Service
-                </a>
-            </button>
-            <button mat-menu-item class="menuButton">
-                <a routerLinkActive="active" routerLink="/login">
-                    Privacy Policy
-                </a>
-            </button>
-        </mat-menu>
-
+    <div class="mainMenu menu" *ngIf="!isSmallDevice">
+        <ng-container *ngTemplateOutlet="MainMenu"></ng-container>
     </div>
 
 
@@ -93,4 +50,57 @@
         </div>
 
     </div>
+    
 </div>
+
+<div class="subHeaderMobile" *ngIf="isSmallDevice">
+    <div class="mainMenu menu">
+        <ng-container *ngTemplateOutlet="MainMenu"></ng-container>
+    </div>
+</div>
+
+<ng-template #MainMenu>
+    <span>
+        <a routerLinkActive="active" routerLink="/home">
+            Home
+        </a>
+    </span>
+    <span>
+        <a routerLinkActive="active" routerLink="/menu">
+            Menu
+        </a>
+    </span>
+    <span>
+        <a routerLinkActive="active" routerLink="/testimonies">
+            Testimonies
+        </a>
+    </span>
+    <span>
+        <a routerLinkActive="active" routerLink="/login" [matMenuTriggerFor]="moreMenu">
+            More
+        </a>
+    </span>
+
+    <mat-menu #moreMenu="matMenu" xPosition="after">
+        <button mat-menu-item class="menuButton">
+            <a routerLinkActive="active" routerLink="/login">
+                About Us
+            </a>
+        </button>
+        <button mat-menu-item class="menuButton">
+            <a routerLinkActive="active" routerLink="/login">
+                Contact Us
+            </a>
+        </button>
+        <button mat-menu-item class="menuButton">
+            <a routerLinkActive="active" routerLink="/login">
+                Terms of Service
+            </a>
+        </button>
+        <button mat-menu-item class="menuButton">
+            <a routerLinkActive="active" routerLink="/login">
+                Privacy Policy
+            </a>
+        </button>
+    </mat-menu>
+</ng-template>

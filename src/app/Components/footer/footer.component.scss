@@ -1,6 +1,6 @@
 .footerContainer{
     bottom: 0;
-    position: absolute;
+    position: fixed;
     .leftMenu{
         display: flex;
         width:49%;
@@ -24,12 +24,16 @@
         width:49%;
         justify-content: flex-end;
 
-        img{
-
-        }
         span{
             margin-left: 1%;
             font-size: 14px !important;
         }
     }
+
+    @media only screen and (max-width : 991.98px){
+        .rightMenu{
+            margin-right: 3rem;
+        }
+    }
 }
+

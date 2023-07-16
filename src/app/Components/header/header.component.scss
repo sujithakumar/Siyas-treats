@@ -38,3 +38,17 @@
 
     
 }
+
+
+.subHeaderMobile{
+    display: block;
+    height: 0rem;
+    padding: 3.5rem 2.5rem 3rem 2.5rem;
+    background-color: thistle;
+    .mainMenu {
+        width: 100%;
+        span {
+            margin-right: 7%;
+        }
+    }
+}

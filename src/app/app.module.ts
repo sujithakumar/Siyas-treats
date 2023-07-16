@@ -6,12 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialHelperModule } from './Helpers/material-helper.module';
 import { AppRoutingModule } from './app-routing.module';
 
-import { HomeComponent } from './home/home.component';
-import { ProfileModule } from './profile/profile.module';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { MenuComponent } from './menu/menu.component';
-import { TestimoniesComponent } from './testimonies/testimonies.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
@@ -23,6 +17,12 @@ import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { HomeComponent } from './Components/home/home.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { MenuComponent } from './Components/menu/menu.component';
+import { TestimoniesComponent } from './Components/testimonies/testimonies.component';
+import { ProfileModule } from './Modules/profile/profile.module';
 
 @NgModule({
   schemas: [

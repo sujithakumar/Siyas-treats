@@ -17,15 +17,18 @@
       </a>
     </div>
     <div>
-      <a href="https://www.google.com/maps?output=search&q=niagara+falls&entry=mc&sa=X&ved=2ahUKEwiig8T11IyAAxXajokEHYMYCUYQ0pQJegQIDBAB" target="_blank">
+      <a href="https://www.google.com/maps?output=search&q=niagara+falls&entry=mc&sa=X&ved=2ahUKEwiig8T11IyAAxXajokEHYMYCUYQ0pQJegQIDBAB"
+        target="_blank">
         <img class="location" src="../../assets/icons/location.png" alt="location" aria-label="location">
       </a>
     </div>
   </div>
+
   <div class="rightMenu menu">
-      <img src="../../assets/icons/copyright.svg" alt="copyright" aria-label="copyright">
-      <span>
-        Siya's Treats, 2023
-      </span>
+    <img src="../../assets/icons/copyright.svg" alt="copyright, Siya's Treats, 2023"
+      aria-label="copyright, Siya's Treats, 2023" title="Siya's Treats, 2023">
+    <span *ngIf="!isSmallDevice">
+      Siya's Treats, 2023
+    </span>
   </div>
 </div>

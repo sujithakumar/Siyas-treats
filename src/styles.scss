@@ -1,25 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
-@import '~@angular/material/prebuilt-themes/indigo-pink.css'; 
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-html, body { 
-    height: 100%; 
+html,
+body {
+    height: 100%;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     overflow: hidden !important;
 }
 
-body { 
-    margin: 0; 
+body {
+    margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: 15px;
 }
 
-mat-icon{
+mat-icon {
     cursor: pointer;
 }
 
-.footerContainer, 
-.headerContainer{
+.footerContainer,
+.headerContainer {
     width: 100%;
     padding: 0.5%;
     position: absolute;
@@ -28,7 +29,7 @@ mat-icon{
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: 18px;
     font-weight: bold;
-    background-color: thistle;
+    background-color: mediumpurple;
     overflow: hidden !important;
 
     a {
@@ -38,9 +39,19 @@ mat-icon{
 
     .menu {
         margin: auto 5%;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    a,
+    span {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 18px;
+        font-weight: bold;
     }
 }
 
-.bodyContainer{
-    margin:5%;
+.bodyContainer {
+    margin: 5%;
 }
