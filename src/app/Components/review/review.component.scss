@@ -1,0 +1,30 @@
+.bodyContainer {
+    overflow: auto !important;
+    .cards {
+        margin: 2rem 1rem;
+
+        .review-card {
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            padding-bottom: 0.5rem;
+            ::ng-deep {
+                mat-card-title {
+                    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+                .material-icons {
+                    font-size: 15px;
+                    height: 15px;
+                    width: 18px;
+                    color: gold;
+                    cursor:default;
+                }
+            }
+
+            .reviewDate{
+                margin-bottom:0.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<div class="bodyContainer">
+   <div class="cards" *ngFor="let res of result">
+    <mat-card class="review-card">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title>{{res.customerName}}</mat-card-title>
+            <mat-card-subtitle>
+                <span *ngFor="let s of res.filledStarsArr">
+                    <mat-icon>star</mat-icon>
+                </span>
+                <span *ngFor="let s of res.emptyStarsArr">
+                    <mat-icon>star_border</mat-icon>
+                </span>           
+                <div class="reviewDate">
+                    <span class="text">Reviewd on:</span>
+                    <span class="date">  {{res.dateAdded | date}}</span>
+                </div>
+            </mat-card-subtitle>
+            <!-- <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" > -->
+          </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+            {{res.content}}
+        </mat-card-content>
+      </mat-card>
+   </div>    
+</div>

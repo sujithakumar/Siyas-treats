@@ -1,5 +1,7 @@
 import { NgModule, isDevMode, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,8 +23,11 @@ import { HomeComponent } from './Components/home/home.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { MenuComponent } from './Components/menu/menu.component';
-import { TestimoniesComponent } from './Components/testimonies/testimonies.component';
 import { ProfileModule } from './Modules/profile/profile.module';
+import { ReviewComponent } from './Components/review/review.component';
+import { HttpClientModule } from '@angular/common/http';
+import { OffersComponent } from './Components/offers/offers.component';
+import { StaticContentComponent } from './Components/static-content/static-content.component';
 
 @NgModule({
   schemas: [
@@ -34,7 +39,10 @@ import { ProfileModule } from './Modules/profile/profile.module';
     HeaderComponent,
     FooterComponent,
     MenuComponent,
-    TestimoniesComponent,
+    ReviewComponent,
+    OffersComponent,
+    StaticContentComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -42,6 +50,8 @@ import { ProfileModule } from './Modules/profile/profile.module';
     MaterialHelperModule,
     AppRoutingModule,
     ProfileModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),

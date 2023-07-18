@@ -71,8 +71,8 @@
         </a>
     </span>
     <span>
-        <a routerLinkActive="active" routerLink="/testimonies">
-            Testimonies
+        <a routerLinkActive="active" routerLink="/review">
+            Review
         </a>
     </span>
     <span>
@@ -83,22 +83,22 @@
 
     <mat-menu #moreMenu="matMenu" xPosition="after">
         <button mat-menu-item class="menuButton">
-            <a routerLinkActive="active" routerLink="/login">
+            <a routerLinkActive="active" (click)="navigate('about')">
                 About Us
             </a>
         </button>
         <button mat-menu-item class="menuButton">
-            <a routerLinkActive="active" routerLink="/login">
+            <a routerLinkActive="active" (click)="navigate('contact')">
                 Contact Us
             </a>
         </button>
         <button mat-menu-item class="menuButton">
-            <a routerLinkActive="active" routerLink="/login">
+            <a routerLinkActive="active" (click)="navigate('terms')">
                 Terms of Service
             </a>
         </button>
         <button mat-menu-item class="menuButton">
-            <a routerLinkActive="active" routerLink="/login">
+            <a routerLinkActive="active" (click)="navigate('privacy')">
                 Privacy Policy
             </a>
         </button>

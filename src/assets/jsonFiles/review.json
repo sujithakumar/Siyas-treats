@@ -1,0 +1,46 @@
+{
+    "reviews":[
+        {
+            "customerID":"10",
+            "customerName":"Ken Kong",
+            "dateAdded":"2023-07-04T13:33:03.969Z",
+            "stars":4,
+            "content":"Extremely pleasant and helpful, have to say, cakes was excellent, yet, being from America, the donuts were not up to scratch thought they would rival, KK, but, only slightly better.They have been pretty good with our orders, friendly staff.  I've got the wrong drink on a different order. But services has been good."
+        },
+        {
+            "customerID":"5",
+            "customerName":"Malathi CK",
+            "dateAdded":"2023-06-24T17:06:03.969Z",
+            "stars":5,
+            "content":"Ordered Pesto Pasta, it was super delicious. Definitely a must try, although they are little spicy thats how I like it"
+        },
+        {
+            "customerID":"2",
+            "customerName":"Sai Krishna",
+            "dateAdded":"2023-07-05T15:33:03.779Z",
+            "stars":5,
+            "content":"Ordered Pesto Pasta, it was super delicious. Definitely a must try, although they are little spicy thats how I like it"
+        },
+        {
+            "customerID":"3",
+            "customerName":"Varsha",
+            "dateAdded":"2023-04-14T17:14:53.969Z",
+            "stars":3,
+            "content":"Ordered Pesto Pasta, it was super delicious. Definitely a must try, although they are little spicy thats how I like it"
+        },
+        {
+            "customerID":"1",
+            "customerName":"Sujitha",
+            "dateAdded":"2023-06-12T17:06:13.969Z",
+            "stars":5,
+            "content":"Ordered Pesto Pasta, it was super delicious. Definitely a must try, although they are little spicy thats how I like it"
+        },
+        {
+            "customerID":"4",
+            "customerName":"Noor Jahan",
+            "dateAdded":"2023-05-04T17:06:09.969Z",
+            "stars":5,
+            "content":"Ordered Pesto Pasta, it was super delicious. Definitely a must try, although they are little spicy thats how I like it"
+        }
+    ]
+}

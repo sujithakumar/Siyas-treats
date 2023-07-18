@@ -6,7 +6,7 @@ html,
 body {
     height: 100%;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    overflow: hidden !important;
+    overflow:auto !important;
 }
 
 body {
@@ -55,3 +55,4 @@ mat-icon {
 .bodyContainer {
     margin: 5%;
 }
+

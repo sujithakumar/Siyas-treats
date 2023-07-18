@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BreakpointService } from 'src/app/Services/breakpoint.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,8 +10,12 @@ import { BreakpointService } from 'src/app/Services/breakpoint.service';
 export class HeaderComponent {
 
   isSmallDevice = false; // mobile/tablet
-  
-  constructor(bs: BreakpointService){
+
+  constructor(bs: BreakpointService,private router: Router) {
     this.isSmallDevice = bs.getIsSmallDevice();;
+  }
+
+  navigate(inp: string) {
+    this.router.navigate( ['static'], { queryParams: { showContent: inp}});
   }
 }
