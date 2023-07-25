@@ -1,0 +1,14 @@
+<div class="chipsContainer">
+
+    <!-- <div class="buttons">
+        <button class="select" (click)="updateSelection(true)">Select All</button>
+        <button class="unselect" (click)="updateSelection(false)">Unselect All</button>
+    </div> -->
+
+    <mat-chip-listbox aria-label="Filter items" *ngFor="let chip of chips">
+            <mat-chip-option color="accent" (click)="selectedChip(chip)">
+                {{chip | titlecase}}
+            </mat-chip-option>
+    </mat-chip-listbox>   
+
+</div>

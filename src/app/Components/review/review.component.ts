@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { REVIEW_JSON_URL } from 'src/app/Helpers/urls';
 import { JsonFileReaderService } from 'src/app/Services/json-file-reader.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { JsonFileReaderService } from 'src/app/Services/json-file-reader.service
 })
 export class ReviewComponent {
 
-  fileURL = "../../../assets/jsonFiles/review.json";
+  fileURL = REVIEW_JSON_URL;
   result : any;
   MaxStars = 5;
   constructor(private jsonReader:JsonFileReaderService){

@@ -12,10 +12,10 @@ import { BreakpointService } from 'src/app/Services/breakpoint.service';
 export class StaticContentComponent {
 
   sectionToShow = 'error';
-  height = "500";
-  width ="500";
+  height = "500px";
+  width = "500px";
 
-  constructor(private route: ActivatedRoute, private title: Title, private bs:BreakpointService) { }
+  constructor(private route: ActivatedRoute, private title: Title, private bs: BreakpointService) { }
 
   ngOnInit() {
     this.route.queryParams.subscribe(
@@ -48,8 +48,20 @@ export class StaticContentComponent {
 
   }
 
-  getHeightAndWidth(){
-    this.height = this.bs.screenHeight.toString();
-    this.width = this.bs.screenWidth.toString();
+  getHeightAndWidth() {
+    let ht=0;
+    let wd = 0;
+    let smallDevice = this.bs.getIsSmallDevice();
+    ht= this.bs.screenHeight;
+    wd = this.bs.screenWidth;
+    if(smallDevice){
+      ht= ht - 100;
+      wd = wd -40;
+    }else{
+      ht= ht;
+      wd = wd - 100;
+    }
+    this.height = ht.toString() + 'px';
+    this.width = wd.toString() + 'px';
   }
 }

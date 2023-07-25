@@ -1,0 +1,31 @@
+<div class="productsContainer">
+    <div class="cards">
+        <mat-card class="menu-card">
+            <mat-card-header>
+                <mat-card-title-group>
+                    <mat-card-title>{{subCat.name | titlecase}}</mat-card-title>
+                    <mat-card-subtitle>
+                        Price : {{subCat.price | currency}}
+                    </mat-card-subtitle>
+
+                </mat-card-title-group>
+            </mat-card-header>
+            <mat-card-content>
+                <img mat-card-sm-image [src]="subCat.imageURL" [title]="subCat.name">
+            </mat-card-content>
+            <mat-card-footer>
+                <div class="btn">
+                    <mat-icon (click)="removeFromCart(subCat)"
+                        [ngClass]="showRemove ? 'colorIcon' : 'greyIcon'">remove_circle</mat-icon>
+
+                    <button>
+                        {{subCat.quantity | number}}
+                    </button>
+                    
+                    <mat-icon (click)="addToCart(subCat)"
+                        [ngClass]="showAdd ? 'colorIcon' : 'greyIcon'">add_circle</mat-icon>
+                </div>
+            </mat-card-footer>
+        </mat-card>
+    </div>
+</div>

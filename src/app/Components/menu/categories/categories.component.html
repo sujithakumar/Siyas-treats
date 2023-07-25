@@ -1,0 +1,10 @@
+<div class="categoryContainer">
+    <div class="cat">
+        All
+     </div>
+    <ng-container *ngFor="let cat of categories">
+        <div class="cat">
+            {{cat | titlecase}}
+        </div>
+    </ng-container>
+</div>

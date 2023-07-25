@@ -28,6 +28,9 @@ import { ReviewComponent } from './Components/review/review.component';
 import { HttpClientModule } from '@angular/common/http';
 import { OffersComponent } from './Components/offers/offers.component';
 import { StaticContentComponent } from './Components/static-content/static-content.component';
+import { CategoriesComponent } from './Components/menu/categories/categories.component';
+import { ProductsComponent } from './Components/menu/products/products.component';
+import { ChipsComponent } from './Components/menu/chips/chips.component';
 
 @NgModule({
   schemas: [
@@ -42,6 +45,9 @@ import { StaticContentComponent } from './Components/static-content/static-conte
     ReviewComponent,
     OffersComponent,
     StaticContentComponent,
+    CategoriesComponent,
+    ProductsComponent,
+    ChipsComponent,
     
   ],
   imports: [

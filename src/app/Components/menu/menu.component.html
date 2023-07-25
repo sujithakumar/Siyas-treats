@@ -1,12 +1,18 @@
 <div class="bodyContainer">
-    <!-- <form [formGroup]="interestFormGroup" (ngSubmit)="onSubmit()">
-
-        <div *ngFor="let interest of interests; let i = index">
-            <mat-checkbox class="example-margin" (change)="onChange($event)" [value]="interest.abbreviation">
-                {{interest.name}}</mat-checkbox>
-        </div>
-
-        <button>Submit</button>
-    </form>
-    <pre>{{ interestFormGroup.value | json }}</pre> -->
+    <div class="leftMenu">
+        <button class="catButton">Categories</button>
+        <app-categories [categories]="categories"></app-categories>
+    </div>
+    <div class="rightContent">
+        <ng-container *ngIf="subCatItems.length > 0">
+            <app-chips [subCatItems]="subCatItems" (selectedFiltersToEmit)="getFilters($event)"></app-chips>
+        </ng-container>
+        <ng-container *ngFor="let x of subCatItems">
+            <ng-container [ngTemplateOutlet]="cards" [ngTemplateOutletContext]="{subCat:x}"></ng-container>
+        </ng-container>
+    </div>
 </div>
+
+<ng-template #cards let-subCat='subCat'>
+   <app-products [subCat]="subCat"></app-products>
+</ng-template>

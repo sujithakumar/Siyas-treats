@@ -1,0 +1,25 @@
+.bodyContainer {
+  overflow: auto !important;
+  margin-right: 1%;
+  margin-left: auto;
+  display: flex;
+
+  .leftMenu{
+    border-right: 5px solid orchid;
+    width:20%;
+    .catButton{
+      background-color: transparent;
+      padding: 5px;
+      text-align: center;
+      font-size: 24px;
+      color: purple;
+      font-weight: bold;
+      border: unset;
+      text-transform: uppercase;
+    }
+  }
+
+  .rightContent{
+    margin:1%;
+  }
+}

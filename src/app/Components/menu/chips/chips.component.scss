@@ -1,0 +1,22 @@
+.chipsContainer {
+    .mdc-evolution-chip-set {
+        display: inline-flex;
+        margin: 0.3rem;
+        padding: 3px;
+        text-align: center;
+    }
+
+    .buttons{
+        margin:0.5rem;
+        margin-bottom:1rem;
+
+        button{
+            background: transparent;
+            border: 2px solid mediumvioletred;
+            font: inherit;
+            border-radius: 5px;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+    }
+}

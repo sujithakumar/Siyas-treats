@@ -1,0 +1,78 @@
+.productsContainer {
+    display: inline-flex;
+    padding:2rem;
+    .cards {
+        margin: auto 2rem;
+       
+        .menu-card {
+            padding-bottom: 0.5rem;
+            width: 15rem;
+            border-radius: 2rem;
+            border: 3px solid mediumorchid;
+            box-shadow: 5px 5px 20px mediumorchid;
+
+            ::ng-deep {
+                mat-card-title {
+                    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+                    color: mediumorchid;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                .material-icons {
+                    font-size: 25px;
+                    height: 25px;
+                    width: 35px;
+                    
+                    cursor: pointer;
+                }
+
+                .material-icons.colorIcon{
+                    color: mediumorchid;
+                }
+
+                .material-icons.greyIcon{
+                    color: grey;
+                }
+
+                mat-card-subtitle {
+                    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+                    color: black;
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin-bottom: 0.5rem;
+                }
+
+                mat-card-content {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        height: 8rem;
+                        width: 8rem;
+                        margin: 1rem;
+                        border-radius: 1rem;
+                    }
+                }
+
+                mat-card-footer {
+                    margin: 1rem;
+                    .btn {
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        button {
+                            background: transparent;
+                            border: 2px solid mediumorchid;
+                            padding: 1px 5px;
+                            margin: 0 5px;
+                            width: 2rem;
+                            span {
+                                padding: 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

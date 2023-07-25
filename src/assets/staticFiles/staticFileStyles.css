@@ -1,7 +1,9 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: 15px;
-    color:rgb(28, 32, 34);
+    color: rgb(28, 32, 34);
+    break-inside: avoid;
+    text-overflow: clip !important;
 }
 
 h1,
@@ -10,16 +12,16 @@ h3 {
     margin-top: 10px;
 }
 
-h1{
+h1 {
     text-decoration: underline;
 }
 
-h3{
-    color:rgb(57, 53, 53);
-    font-size:bold;
+h3 {
+    color: rgb(100, 97, 97);
+    font-size: bold;
 }
 
-h4{
+h4 {
     font-size: 18px;
     font: bold;
     text-decoration: underline;
@@ -32,16 +34,34 @@ li {
     margin: 7px auto;
 }
 
-.container{
-    margin-top:10px;
-    display: inline-flex;
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.item{
-    border:2px dotted mediumorchid;
+.item {
+    border: 2px dotted mediumorchid;
     border-radius: 5px;
-    margin:1rem;
-    padding:1rem;
+    margin: 1rem;
+    padding: 1rem;
     text-align: center;
+    width: 10rem;
 }
 
+p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+}
+
+@media screen and (max-width:999px) {
+    .item {
+        display: block;
+        text-align: left;
+        border:none;
+        padding : unset;
+        width: fit-content !important;
+    }
+    
+}
