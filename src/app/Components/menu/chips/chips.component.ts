@@ -9,10 +9,13 @@ import { MenuService } from 'src/app/Services/menu.service';
 })
 export class ChipsComponent {
 
-  chips: any[] = [];
+  chips: string[] = [];
   selectedChips: any[] = [];
-  isAllSelected = false;
- 
+  all = "ALL";
+  none = "NONE";
+  is_None_ChipDisable: boolean = false;
+  saveChips: string[] = [];
+
   @Output() selectedFiltersToEmit = new EventEmitter<string[]>();
 
   private _subCatItems: any;
@@ -33,6 +36,19 @@ export class ChipsComponent {
   }
 
   selectedChip(selectedItem: string) {
+
+    // //if "ALL" chip selected
+    // if (selectedItem.toUpperCase() == this.all) {
+    //   this.chips = this.saveChips;
+    //   return;
+    // }
+
+    //if "NONE" chip selected
+    if (selectedItem.toUpperCase() == this.none) {
+      this.chips = [];
+      return;
+    }
+
     //find if the item is already in the array
     const index = this.selectedChips.indexOf(selectedItem);
     if (index >= 0) {
@@ -42,13 +58,19 @@ export class ChipsComponent {
       //item not present in array --> add
       this.selectedChips.push(selectedItem);
     }
-    
+    this.is_None_ChipDisable = false;
+    if (this.selectedChips.length > 0) {
+      this.is_None_ChipDisable = true;
+      this.chips = [];
+      this.chips = [...this.selectedChips];
+    }
+
     this.emitSelectedChips()
   }
 
-  emitSelectedChips(){
+  emitSelectedChips() {
     this.selectedFiltersToEmit.emit(this.selectedChips);
   }
 
-  
+
 }

@@ -17,7 +17,7 @@ export class ProductsComponent {
     }
   };
 
-  setAddRemoveIcon(qty: number) {
+ setAddRemoveIcon(qty: number) {
 
     if (qty === 0) {
       this.showAdd = true;

@@ -1,14 +1,17 @@
 <div class="chipsContainer">
 
-    <!-- <div class="buttons">
-        <button class="select" (click)="updateSelection(true)">Select All</button>
-        <button class="unselect" (click)="updateSelection(false)">Unselect All</button>
+    <!-- <div class="specialChips">
+        <mat-button-toggle-group name="specialChips" aria-label="All or None button" >
+            <mat-button-toggle value="all" (click)="selectedChip('all')">{{all}}</mat-button-toggle>
+            <mat-button-toggle value="none" [disabled]="is_None_ChipDisable"
+                (click)="selectedChip('all')">{{none}}</mat-button-toggle>
+        </mat-button-toggle-group>
     </div> -->
 
     <mat-chip-listbox aria-label="Filter items" *ngFor="let chip of chips">
-            <mat-chip-option color="accent" (click)="selectedChip(chip)">
-                {{chip | titlecase}}
-            </mat-chip-option>
-    </mat-chip-listbox>   
+        <mat-chip-option (click)="selectedChip(chip)">
+            {{chip | titlecase}}
+        </mat-chip-option>
+    </mat-chip-listbox>
 
 </div>

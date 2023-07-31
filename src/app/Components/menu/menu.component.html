@@ -1,7 +1,7 @@
 <div class="bodyContainer">
     <div class="leftMenu">
         <button class="catButton">Categories</button>
-        <app-categories [categories]="categories"></app-categories>
+        <app-categories [categories]="categories" (emitFilterCategory)="fiterCategory($event)"></app-categories>
     </div>
     <div class="rightContent">
         <ng-container *ngIf="subCatItems.length > 0">

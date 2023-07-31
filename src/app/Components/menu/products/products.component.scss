@@ -6,7 +6,7 @@
        
         .menu-card {
             padding-bottom: 0.5rem;
-            width: 15rem;
+            width: 16rem;
             border-radius: 2rem;
             border: 3px solid mediumorchid;
             box-shadow: 5px 5px 20px mediumorchid;
@@ -14,8 +14,8 @@
             ::ng-deep {
                 mat-card-title {
                     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-                    color: mediumorchid;
-                    font-size: 16px;
+                    color: darkorchid;
+                    font-size: 17px;
                     font-weight: bold;
                 }
                 .material-icons {

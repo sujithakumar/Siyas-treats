@@ -6,17 +6,27 @@
         text-align: center;
     }
 
-    .buttons{
-        margin:0.5rem;
-        margin-bottom:1rem;
+    .buttons {
+        margin: 0.5rem;
+        margin-bottom: 1rem;
 
-        button{
+        button {
             background: transparent;
             border: 2px solid mediumvioletred;
             font: inherit;
             border-radius: 5px;
             margin-right: 1rem;
             cursor: pointer;
+        }
+    }
+
+    .specialChips {
+        mat-button-toggle-group{
+            border:unset;
+        }
+        mat-button-toggle{
+            padding:2px;
+            margin:auto 5px;
         }
     }
 }

@@ -1,10 +1,14 @@
 import { Injectable } from '@angular/core';
-import { getCategoriesAsArray, getFilters, getSubCategories, mapCategoryNames } from '../Helpers/menu-helper';
+import { getCategoriesAsArray, getFilters, getMenuKeyByValue, getSubCategories, mapCategoryNames } from '../Helpers/menu-helper';
+import { BehaviorSubject } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuService {
+
+  selectedMenuItem = new BehaviorSubject<string>('ALL');
 
   constructor() { }
 
@@ -22,5 +26,17 @@ export class MenuService {
 
   getfilters(inp:any[]){
     return getFilters(inp);
+  }
+
+  getKeyByValue(value:string|number){
+    return getMenuKeyByValue(value)
+  }
+
+  setSelectedMenuItem(inp:string){
+    this.selectedMenuItem.next(inp);
+  }
+
+  getSelectedMenuItem(){
+    return this.selectedMenuItem.asObservable();
   }
 }

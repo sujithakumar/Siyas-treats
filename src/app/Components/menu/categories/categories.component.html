@@ -1,10 +1,10 @@
 <div class="categoryContainer">
-    <div class="cat">
+    <button class="cat" (click)="filterCategory('All')" >
         All
-     </div>
+     </button>
     <ng-container *ngFor="let cat of categories">
-        <div class="cat">
+        <button class="cat" (click)="filterCategory(cat)">
             {{cat | titlecase}}
-        </div>
+        </button>
     </ng-container>
 </div>

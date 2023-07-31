@@ -1,4 +1,5 @@
-import { BASE_BUBBLETEA_MENU, BASE_MENU_IMAGES_URL, BASE_TEACOFFEE_MENU } from "./urls";
+import { getKeyByValue } from "./genericHelpers";
+import { BASE_BUBBLETEA_MENU, BASE_KIDS_MENU, BASE_MENU_IMAGES_URL, BASE_MOUSSE_MENU, BASE_TEACOFFEE_MENU } from "./urls";
 
 const MENU = {
     "Hot": "Hot Beverages",
@@ -6,7 +7,12 @@ const MENU = {
     "Kids": "Kids Cakes",
     "love": "Lovers special",
     "swiss": "Swiss Rolls",
-    "bday": "birthday Cakes"
+    "bday": "birthday Cakes",
+    "Mousse": "Mousse"
+}
+
+export function getMenuKeyByValue(val: string | number) {
+    return getKeyByValue(MENU, val);
 }
 
 export function getCategoriesAsArray(inp: any) {
@@ -40,14 +46,14 @@ export function getSubCategories(inp: any, data: any) {
     return out;
 }
 
-export function getFilters(inp:any[]){
-    let out :any[] = [];
+export function getFilters(inp: any[]) {
+    let out: any[] = [];
     inp.forEach(element => {
-       element.identifier.forEach((el: any) => {
+        element.identifier.forEach((el: any) => {
             out.push(el);
-       });
+        });
     });
-    out =[...new Set(out)];
+    out = [...new Set(out)];
     return out.sort();
 }
 
@@ -62,7 +68,15 @@ function imageURLMapping(e: any, subcat: string) {
         case 'Bubble Tea':
             out = out + BASE_BUBBLETEA_MENU + "/" + e.image;
             break;
-            
+
+        case 'Mousse':
+            out = out + BASE_MOUSSE_MENU + "/" + e.image;
+            break;
+
+        case 'Kids':
+            out = out + BASE_KIDS_MENU + "/" + e.image;
+            break;
+
         default:
             out = out + BASE_TEACOFFEE_MENU + "/" + e.image;
             break;
@@ -70,3 +84,4 @@ function imageURLMapping(e: any, subcat: string) {
     }
     return out;
 }
+

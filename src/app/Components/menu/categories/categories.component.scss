@@ -1,15 +1,21 @@
-.categoryContainer{
-    padding : 5px;
-    .cat{
-        padding-right:1.25rem;
-        padding-bottom:1.25rem;
+.categoryContainer {
+    padding: 5px;
+
+    button {
+        all: unset;
+    }
+
+    .cat {
+        width: 90%;
+        display: block;
+        padding-right: 1.25rem;
+        padding-bottom: 1.25rem;
         text-align: left;
-        padding-top:1.25rem;
+        padding-top: 1.25rem;
         cursor: pointer !important;
         border-bottom: 2px dashed mediumorchid;
         font-size: 1rem;
         font-weight: bold;
         color: mediumorchid;
-        box-shadow:floralwhite 2px 2px;
     }
 }

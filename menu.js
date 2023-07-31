@@ -1,4 +1,4 @@
-{
+module.exports ={
     "items": [
         {
             "category": "Mousse",
@@ -113,7 +113,7 @@
                                 "cake",
                                 "kids",
                                 "cute",
-                                "pig"
+                                "cat"
                             ],
                             "hasOffer": 0,
                             "offerPrice": 0,
@@ -141,167 +141,6 @@
             ]
         },
         {
-            "category": "Kids",
-            "categoryID": "4",
-            "subCat": [
-                {
-                    "catName": "Kids",
-                    "items": [
-                        {
-                            "name": "Bear Cake",
-                            "image": "bear.jpg",
-                            "price": 30,
-                            "identifier": [
-                                "cake",
-                                "Kids",
-                                "cute",
-                                "bear",
-                                "birthday"
-                            ],
-                            "hasOffer": 0,
-                            "offerPrice": 0,
-                            "quantity": 0,
-                            "subCatID":41
-                        },
-                        {
-                            "name": "Barbie Cake",
-                            "image": "barbie.jpg",
-                            "price": 50,
-                            "identifier": [
-                                "cake",
-                                "Kids",
-                                "cute",
-                                "barbie",
-                                "birthday"
-                            ],
-                            "hasOffer": 0,
-                            "offerPrice": 0,
-                            "quantity": 0,
-                            "subCatID":42
-                        },
-                        {
-                            "name": "Jerry Cake",
-                            "image": "jerry.jpg",
-                            "price": 40,
-                            "identifier": [
-                                "cake",
-                                "Kids",
-                                "cute",
-                                "jerry",
-                                "cartoon",
-                                "birthday"
-                            ],
-                            "hasOffer": 0,
-                            "offerPrice": 0,
-                            "quantity": 0,
-                            "subCatID":43
-                        },
-                        {
-                            "name": "Mickey Mouse Cake",
-                            "image": "mickey.jpeg",
-                            "price": 60,
-                            "identifier": [
-                                "cake",
-                                "Kids",
-                                "cute",
-                                "mickey",
-                                "mouse",
-                                "cartoon",
-                                "birthday"
-                            ],
-                            "hasOffer": 0,
-                            "offerPrice": 0,
-                            "quantity": 0,
-                            "subCatID":44
-                        },
-                        {
-                            "name": "Mickey-Mouse Cake",
-                            "image": "mickeyMouse.jpeg",
-                            "price": 60,
-                            "identifier": [
-                                "cake",
-                                "Kids",
-                                "cute",
-                                "mickey",
-                                "mouse",
-                                "cartoon",
-                                "birthday"
-                            ],
-                            "hasOffer": 0,
-                            "offerPrice": 0,
-                            "quantity": 0,
-                            "subCatID":45
-                        },
-                        {
-                            "name": "Panda Cake",
-                            "image": "pandas.jpeg",
-                            "price": 70,
-                            "identifier": [
-                                "cake",
-                                "Kids",
-                                "cute",
-                                "panda",
-                                "birthday"
-                            ],
-                            "hasOffer": 0,
-                            "offerPrice": 0,
-                            "quantity": 0,
-                            "subCatID":46
-                        },
-                        {
-                            "name": "Pineapple Cake",
-                            "image": "pineapple.png",
-                            "price": 70,
-                            "identifier": [
-                                "cake",
-                                "Kids",
-                                "cute",
-                                "pineapple",
-                                "birthday"
-                            ],
-                            "hasOffer": 0,
-                            "offerPrice": 0,
-                            "quantity": 0,
-                            "subCatID":47
-                        },
-                        {
-                            "name": "Polar-bear Cake",
-                            "image": "polarbearcake.jpg",
-                            "price": 70,
-                            "identifier": [
-                                "cake",
-                                "Kids",
-                                "cute",
-                                "polar-bear",
-                                "cartoon",
-                                "birthday"
-                            ],
-                            "hasOffer": 0,
-                            "offerPrice": 0,
-                            "quantity": 0,
-                            "subCatID":48
-                        },
-                        {
-                            "name": "Strawberry Cake",
-                            "image": "strawberry.jpg",
-                            "price": 70,
-                            "identifier": [
-                                "cake",
-                                "Kids",
-                                "cute",
-                                "strawberry",
-                                "birthday"
-                            ],
-                            "hasOffer": 0,
-                            "offerPrice": 0,
-                            "quantity": 0,
-                            "subCatID":49
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "category": "Hot",
             "categoryID": "1",
             "subCat": [
@@ -314,7 +153,7 @@
                             "price": 5,
                             "identifier": [
                                 "plain",
-                                "Tea","Hot"
+                                "tea"
                             ],
                             "hasOffer": 0,
                             "offerPrice": 0,
@@ -327,7 +166,7 @@
                             "price": 7,
                             "identifier": [
                                 "plain",
-                                "Tea","Hot",
+                                "tea",
                                 "herbal"
                             ],
                             "hasOffer": 0,
@@ -340,7 +179,7 @@
                             "image": "milkTea.jpg",
                             "identifier": [
                                 "milk",
-                                "tea","hot"
+                                "tea"
                             ],
                             "price": 8,
                             "hasOffer": 0,
@@ -353,7 +192,7 @@
                             "image": "milkTea.jpg",
                             "identifier": [
                                 "milk",
-                                "Tea","Hot",
+                                "tea",
                                 "ginger"
                             ],
                             "price": 10,
@@ -367,7 +206,7 @@
                             "image": "milkTea.jpg",
                             "identifier": [
                                 "milk",
-                                "Tea","Hot",
+                                "tea",
                                 "cardamom"
                             ],
                             "price": 10,
@@ -386,7 +225,7 @@
                             "image": "blackCoffee.jpg",
                             "identifier": [
                                 "plain",
-                                "Coffee","Hot"
+                                "coffee"
                             ],
                             "price": 5,
                             "hasOffer": 0,
@@ -399,7 +238,7 @@
                             "image": "filterCoffee.jpeg",
                             "identifier": [
                                 "milk",
-                                "Coffee","Hot"
+                                "coffee"
                             ],
                             "price": 10,
                             "hasOffer": 0,
@@ -423,8 +262,8 @@
                             "image": "icedTea.png",
                             "identifier": [
                                 "plain",
-                                "Tea","Cold",
-                                "Cold","ice"
+                                "tea",
+                                "ice"
                             ],
                             "price": 4,
                             "hasOffer": 0,
@@ -442,8 +281,8 @@
                             "image": "icedCoffee.jpg",
                             "identifier": [
                                 "milk",
-                                "Coffee","Cold",
-                                "Cold","ice"
+                                "coffee",
+                                "ice"
                             ],
                             "price": 6,
                             "hasOffer": 0,
@@ -462,8 +301,8 @@
                             "identifier": [
                                 "milk",
                                 "blueberry",
-                                "Bubble Tea", "Tea",
-                                "Cold","ice"
+                                "bubble-tea",
+                                "ice"
                             ],
                             "price": 15,
                             "hasOffer": 0,
@@ -477,8 +316,8 @@
                             "identifier": [
                                 "milk",
                                 "mango",
-                                "Bubble Tea", "Tea",
-                                "Cold","ice"
+                                "bubble-tea",
+                                "ice"
                             ],
                             "price": 10,
                             "hasOffer": 0,
@@ -492,8 +331,8 @@
                             "identifier": [
                                 "milk",
                                 "chocolate",
-                                "Bubble Tea", "Tea",
-                                "Cold","ice"
+                                "bubble-tea",
+                                "ice"
                             ],
                             "price": 9,
                             "hasOffer": 0,
@@ -507,8 +346,8 @@
                             "identifier": [
                                 "milk",
                                 "strawberry",
-                                "Bubble Tea", "Tea",
-                                "Cold","ice"
+                                "bubble-tea",
+                                "ice"
                             ],
                             "price": 13,
                             "hasOffer": 0,
@@ -522,8 +361,8 @@
                             "identifier": [
                                 "milk",
                                 "matcha",
-                                "Bubble Tea", "Tea",
-                                "Cold","ice"
+                                "bubble-tea",
+                                "ice"
                             ],
                             "price": 13,
                             "hasOffer": 0,
@@ -536,4 +375,4 @@
             ]
         }       
     ]
-}
+};

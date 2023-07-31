@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { JsonFileReaderService } from 'src/app/Services/json-file-reader.service';
 import { MenuService } from 'src/app/Services/menu.service';
 
@@ -17,11 +17,27 @@ export class CategoriesComponent {
     }
   };
 
+  @Output() emitFilterCategory = new EventEmitter<string>();
 
   constructor(private jsonReader: JsonFileReaderService, private menuService: MenuService) { }
 
   mapCategoryNames(val :string[]) {
     this._categories = this.menuService.mapCategoryNames(val);
+  }
+
+  filterCategory(cat:string){
+    let temp: any;
+    if(cat.toLowerCase() == 'all'){
+      temp = "all";
+    }else{
+      temp = this.menuService.getKeyByValue(cat);
+    }
+    this.styleSelectedMenu(cat);
+    this.emitFilterCategory.emit(temp);
+  }
+
+  styleSelectedMenu(cat:string){
+
   }
 
 }
