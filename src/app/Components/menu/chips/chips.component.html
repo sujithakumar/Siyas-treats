@@ -1,11 +1,11 @@
 <div class="chipsContainer">
 
     <!-- <div class="specialChips">
-        <mat-button-toggle-group name="specialChips" aria-label="All or None button" >
-            <mat-button-toggle value="all" (click)="selectedChip('all')">{{all}}</mat-button-toggle>
-            <mat-button-toggle value="none" [disabled]="is_None_ChipDisable"
-                (click)="selectedChip('all')">{{none}}</mat-button-toggle>
-        </mat-button-toggle-group>
+        <mat-chip-listbox aria-label="CLEAR Filter">
+            <mat-chip-option (click)="selectedChip(clearAll)">
+                {{clearAll | titlecase}}
+            </mat-chip-option>
+        </mat-chip-listbox>
     </div> -->
 
     <mat-chip-listbox aria-label="Filter items" *ngFor="let chip of chips">

@@ -23,6 +23,7 @@ export class MenuComponent {
   isFilter: boolean = false;
   private saveSubCatItems: subCatItems[] = [];
   private selectedMenu:string ='all';
+  filters : string[] =[];
 
   constructor(private jsonReader: JsonFileReaderService, private menuService: MenuService) {
     this.menuService.getSelectedMenuItem().subscribe(x=>{ 
@@ -81,6 +82,7 @@ export class MenuComponent {
       if(this.selectedMenu.toLowerCase() == 'all'){
         this.subCatItems = this.saveSubCatItems;
         this.isFilter = false;
+        this.filters =[];
         return;
       }else{
         filters.push(this.selectedMenu);
@@ -88,10 +90,18 @@ export class MenuComponent {
     }
 
     this.subCatItems = [];
+    filters = [...new Set([...filters ,...this.filters])];
 
     if (filters.length == 1) {
-      this.subCatItems = this.saveSubCatItems.filter((ele: subCatItems) => ele.identifier.includes(filters[0]));
-      return;
+      if(filters[0].toLowerCase() == 'all'){
+        this.subCatItems = this.saveSubCatItems;
+        this.isFilter = false;
+        this.filters =[];
+        return;
+      }else{
+        this.subCatItems = this.saveSubCatItems.filter((ele: subCatItems) => ele.identifier.includes(filters[0]));
+        return;
+      }
     }
 
     if (filters.length > 1) {
@@ -103,15 +113,12 @@ export class MenuComponent {
   }
 
   fiterCategory(categoryName: string) {
-    // this.isFilter = true;
-    // this.menuService.setSelectedMenuItem(categoryName);
-    // if(categoryName.toLowerCase() == 'all'){
-    //   this.subCatItems = this.saveSubCatItems;
-    //   this.isFilter = false;
-    //   return;
-    // }
-    // this.subCatItems =[];
-    // this.getSubCategoriesList(categoryName);
+    this.isFilter = true;
+    this.menuService.setSelectedMenuItem(categoryName);
+    this.subCatItems = this.saveSubCatItems;
+    this.filters = [];
+    this.filters.push(categoryName);
+    this.getFilters(this.filters);
   }
 
 }

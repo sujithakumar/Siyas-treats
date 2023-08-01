@@ -11,9 +11,7 @@ export class ChipsComponent {
 
   chips: string[] = [];
   selectedChips: any[] = [];
-  all = "ALL";
-  none = "NONE";
-  is_None_ChipDisable: boolean = false;
+  clearAll = "CLEAR ALL";
   saveChips: string[] = [];
 
   @Output() selectedFiltersToEmit = new EventEmitter<string[]>();
@@ -28,39 +26,37 @@ export class ChipsComponent {
   };
 
   constructor(private menuService: MenuService) {
+    this.menuService.getSelectedMenuItem().subscribe(x => {
+      this.selectedChips = [];
+    })
   }
 
 
   getFilters(inp: any) {
     this.chips = this.menuService.getfilters(inp);
+    this.saveChips = this.chips;
   }
 
   selectedChip(selectedItem: string) {
 
-    // //if "ALL" chip selected
-    // if (selectedItem.toUpperCase() == this.all) {
-    //   this.chips = this.saveChips;
-    //   return;
-    // }
-
-    //if "NONE" chip selected
-    if (selectedItem.toUpperCase() == this.none) {
-      this.chips = [];
-      return;
-    }
-
-    //find if the item is already in the array
-    const index = this.selectedChips.indexOf(selectedItem);
-    if (index >= 0) {
-      //item present in array --> remove
-      this.selectedChips.splice(index, 1);
+    let index: number = 0;
+    //if "Clear All" chip selected
+    if (selectedItem.toUpperCase() == this.clearAll) {
+      this.selectedChips = [];
     } else {
-      //item not present in array --> add
-      this.selectedChips.push(selectedItem);
+      //find if the item is already in the array
+      index = this.selectedChips.indexOf(selectedItem);
+      if (index >= 0) {
+        //item present in array --> remove
+        this.selectedChips.splice(index, 1);
+      } else {
+        //item not present in array --> add
+        this.selectedChips.push(selectedItem);
+      }
+
     }
-    this.is_None_ChipDisable = false;
+
     if (this.selectedChips.length > 0) {
-      this.is_None_ChipDisable = true;
       this.chips = [];
       this.chips = [...this.selectedChips];
     }
