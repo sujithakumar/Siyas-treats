@@ -6,6 +6,11 @@ body {
     text-overflow: clip !important;
 }
 
+.dark-mode{
+    background-color: #000000e3;
+    color: whitesmoke !important;
+}
+
 h1,
 h2,
 h3 {

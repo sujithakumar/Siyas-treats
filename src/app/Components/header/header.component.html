@@ -49,8 +49,15 @@
             </button>
         </div>
 
+        <div class="mode">
+            <!-- <mat-icon  class="material-icons-round">brightness_5</mat-icon> -->
+            <mat-slide-toggle  class="material-icons-round" [(ngModel)]="isChecked" (change)="toggleMode(isChecked)">
+            </mat-slide-toggle>
+            <mat-icon  class="material-icons-round">bedtime</mat-icon>
+        </div>
+
     </div>
-    
+
 </div>
 
 <div class="subHeaderMobile" *ngIf="isSmallDevice">

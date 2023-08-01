@@ -5,7 +5,14 @@
                 <mat-card-title-group>
                     <mat-card-title>{{subCat.name | titlecase}}</mat-card-title>
                     <mat-card-subtitle>
-                        Price : {{subCat.price | currency}}
+                        <div class="subtitle">
+                            <span class="txt"> Price : </span>
+                            <span class="info">{{subCat.price | currency}}</span>
+                        </div>
+                        <div class="subtitle">
+                            <span class="txt"> Weight : </span>
+                            <span class="info">{{subCat.weight}}</span>
+                        </div>
                     </mat-card-subtitle>
 
                 </mat-card-title-group>

@@ -21,7 +21,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":31
+                            "weight": "250 gm",
+                            "subCatID": 31
                         },
                         {
                             "name": "Bunny Mousse Cake",
@@ -37,7 +38,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":32
+                            "weight": "250 gm",
+                            "subCatID": 32
                         },
                         {
                             "name": "Cat Mousse Cake",
@@ -53,7 +55,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":33
+                            "weight": "250 gm",
+                            "subCatID": 33
                         },
                         {
                             "name": "Duck Mousse Cake",
@@ -69,7 +72,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":34
+                            "weight": "250 gm",
+                            "subCatID": 34
                         },
                         {
                             "name": "Matcha-Bear Mousse Cake",
@@ -86,7 +90,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":35
+                            "weight": "250 gm",
+                            "subCatID": 35
                         },
                         {
                             "name": "Pig Mousse Cake",
@@ -102,7 +107,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":36
+                            "weight": "250 gm",
+                            "subCatID": 36
                         },
                         {
                             "name": "Pink-Pig Mousse Cake",
@@ -118,7 +124,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":37
+                            "weight": "250 gm",
+                            "subCatID": 37
                         },
                         {
                             "name": "Rat Mousse Cake",
@@ -134,7 +141,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":38
+                            "weight": "250 gm",
+                            "subCatID": 38
                         }
                     ]
                 }
@@ -161,7 +169,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":41
+                            "weight": "1 kg",
+                            "subCatID": 41
                         },
                         {
                             "name": "Barbie Cake",
@@ -171,13 +180,15 @@
                                 "cake",
                                 "Kids",
                                 "cute",
+                                "cartoon",
                                 "barbie",
                                 "birthday"
                             ],
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":42
+                            "weight": "3 kg",
+                            "subCatID": 42
                         },
                         {
                             "name": "Jerry Cake",
@@ -194,7 +205,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":43
+                            "weight": "1 kg",
+                            "subCatID": 43
                         },
                         {
                             "name": "Mickey Mouse Cake",
@@ -212,7 +224,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":44
+                            "weight": "1 kg",
+                            "subCatID": 44
                         },
                         {
                             "name": "Mickey-Mouse Cake",
@@ -230,7 +243,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":45
+                            "weight": "1 kg",
+                            "subCatID": 45
                         },
                         {
                             "name": "Panda Cake",
@@ -246,7 +260,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":46
+                            "weight": "1 kg",
+                            "subCatID": 46
                         },
                         {
                             "name": "Pineapple Cake",
@@ -262,7 +277,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":47
+                            "weight": "1 kg",
+                            "subCatID": 47
                         },
                         {
                             "name": "Polar-bear Cake",
@@ -279,7 +295,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":48
+                            "weight": "1 kg",
+                            "subCatID": 48
                         },
                         {
                             "name": "Strawberry Cake",
@@ -295,7 +312,8 @@
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":49
+                            "weight": "1 kg",
+                            "subCatID": 49
                         }
                     ]
                 }
@@ -314,12 +332,14 @@
                             "price": 5,
                             "identifier": [
                                 "plain",
-                                "Tea","Hot"
+                                "Tea",
+                                "Hot"
                             ],
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":11
+                            "weight": "250 ml",
+                            "subCatID": 11
                         },
                         {
                             "name": "Herbal Tea",
@@ -327,54 +347,62 @@
                             "price": 7,
                             "identifier": [
                                 "plain",
-                                "Tea","Hot",
+                                "Tea",
+                                "Hot",
                                 "herbal"
                             ],
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":12
+                            "weight": "250 ml",
+                            "subCatID": 12
                         },
                         {
                             "name": "Milk Tea - Plain",
                             "image": "milkTea.jpg",
                             "identifier": [
                                 "milk",
-                                "tea","hot"
+                                "tea",
+                                "hot"
                             ],
                             "price": 8,
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":13
+                            "weight": "250 ml",
+                            "subCatID": 13
                         },
                         {
                             "name": "Milk Tea - Ginger",
                             "image": "milkTea.jpg",
                             "identifier": [
                                 "milk",
-                                "Tea","Hot",
+                                "Tea",
+                                "Hot",
                                 "ginger"
                             ],
                             "price": 10,
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":14
+                            "weight": "250 ml",
+                            "subCatID": 14
                         },
                         {
                             "name": "Milk Tea - Cardamom",
                             "image": "milkTea.jpg",
                             "identifier": [
                                 "milk",
-                                "Tea","Hot",
+                                "Tea",
+                                "Hot",
                                 "cardamom"
                             ],
                             "price": 10,
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":15
+                            "weight": "250 ml",
+                            "subCatID": 15
                         }
                     ]
                 },
@@ -386,26 +414,30 @@
                             "image": "blackCoffee.jpg",
                             "identifier": [
                                 "plain",
-                                "Coffee","Hot"
+                                "Coffee",
+                                "Hot"
                             ],
                             "price": 5,
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":16
+                            "weight": "250 ml",
+                            "subCatID": 16
                         },
                         {
                             "name": "Filter Coffee(Milk)",
                             "image": "filterCoffee.jpeg",
                             "identifier": [
                                 "milk",
-                                "Coffee","Hot"
+                                "Coffee",
+                                "Hot"
                             ],
                             "price": 10,
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":17
+                            "weight": "250 ml",
+                            "subCatID": 17
                         }
                     ]
                 }
@@ -423,14 +455,17 @@
                             "image": "icedTea.png",
                             "identifier": [
                                 "plain",
-                                "Tea","Cold",
-                                "Cold","ice"
+                                "Tea",
+                                "Cold",
+                                "Cold",
+                                "ice"
                             ],
                             "price": 4,
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":21
+                            "weight": "300 ml",
+                            "subCatID": 21
                         }
                     ]
                 },
@@ -442,14 +477,17 @@
                             "image": "icedCoffee.jpg",
                             "identifier": [
                                 "milk",
-                                "Coffee","Cold",
-                                "Cold","ice"
+                                "Coffee",
+                                "Cold",
+                                "Cold",
+                                "ice"
                             ],
                             "price": 6,
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":22
+                            "weight": "300 ml",
+                            "subCatID": 22
                         }
                     ]
                 },
@@ -462,14 +500,17 @@
                             "identifier": [
                                 "milk",
                                 "blueberry",
-                                "Bubble Tea", "Tea",
-                                "Cold","ice"
+                                "Bubble Tea",
+                                "Tea",
+                                "Cold",
+                                "ice"
                             ],
                             "price": 15,
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":23
+                            "weight": "250 ml",
+                            "subCatID": 23
                         },
                         {
                             "name": "Mango bubble tea",
@@ -477,14 +518,17 @@
                             "identifier": [
                                 "milk",
                                 "mango",
-                                "Bubble Tea", "Tea",
-                                "Cold","ice"
+                                "Bubble Tea",
+                                "Tea",
+                                "Cold",
+                                "ice"
                             ],
                             "price": 10,
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":25
+                            "weight": "250 ml",
+                            "subCatID": 25
                         },
                         {
                             "name": "Chocolate bubble tea",
@@ -492,14 +536,17 @@
                             "identifier": [
                                 "milk",
                                 "chocolate",
-                                "Bubble Tea", "Tea",
-                                "Cold","ice"
+                                "Bubble Tea",
+                                "Tea",
+                                "Cold",
+                                "ice"
                             ],
                             "price": 9,
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":26
+                            "weight": "250 ml",
+                            "subCatID": 26
                         },
                         {
                             "name": "Strawberry bubble tea",
@@ -507,14 +554,17 @@
                             "identifier": [
                                 "milk",
                                 "strawberry",
-                                "Bubble Tea", "Tea",
-                                "Cold","ice"
+                                "Bubble Tea",
+                                "Tea",
+                                "Cold",
+                                "ice"
                             ],
                             "price": 13,
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":27
+                            "weight": "250 ml",
+                            "subCatID": 27
                         },
                         {
                             "name": "Matcha bubble tea",
@@ -522,18 +572,128 @@
                             "identifier": [
                                 "milk",
                                 "matcha",
-                                "Bubble Tea", "Tea",
-                                "Cold","ice"
+                                "Bubble Tea",
+                                "Tea",
+                                "Cold",
+                                "ice"
                             ],
                             "price": 13,
                             "hasOffer": 0,
                             "offerPrice": 0,
                             "quantity": 0,
-                            "subCatID":28
+                            "weight": "250 ml",
+                            "subCatID": 28
                         }
                     ]
                 }
             ]
-        }       
+        },
+        {
+            "category": "Birthday",
+            "categoryID": "5",
+            "subCat": [
+                {
+                    "catName": "Birthday",
+                    "items": [
+                        {
+                            "name": "black Current cake",
+                            "image": "blackcurrent.jpg",
+                            "identifier": [
+                                "cake",
+                                "Birthday",
+                                "special",
+                                "black Current"
+                            ],
+                            "price": 50,
+                            "hasOffer": 0,
+                            "offerPrice": 0,
+                            "quantity": 0,
+                            "weight": "1 kg",
+                            "subCatID": 41
+                        },
+                        {
+                            "name": "black forest cake",
+                            "image": "blackForest.jpeg",
+                            "identifier": [
+                                "cake",
+                                "Birthday",
+                                "special",
+                                "black forest"
+                            ],
+                            "price": 55,
+                            "hasOffer": 0,
+                            "offerPrice": 0,
+                            "quantity": 0,
+                            "weight": "1 kg",
+                            "subCatID": 42
+                        },
+                        {
+                            "name": "white forest cake",
+                            "image": "whiteForest.jpeg",
+                            "identifier": [
+                                "cake",
+                                "Birthday",
+                                "special",
+                                "white forest"
+                            ],
+                            "price": 75,
+                            "hasOffer": 0,
+                            "offerPrice": 0,
+                            "quantity": 0,
+                            "weight": "1 kg",
+                            "subCatID": 46
+                        },
+                        {
+                            "name": "black forest-Special cake",
+                            "image": "blackforestSpecial.jpg",
+                            "identifier": [
+                                "cake",
+                                "Birthday",
+                                "special",
+                                "black forest"
+                            ],
+                            "price": 100,
+                            "hasOffer": 0,
+                            "offerPrice": 0,
+                            "quantity": 0,
+                            "weight": "1 kg",
+                            "subCatID": 43
+                        },
+                        {
+                            "name": "blueberry cake",
+                            "image": "BLUEBERRY.jpeg",
+                            "identifier": [
+                                "cake",
+                                "Birthday",
+                                "special",
+                                "blueberry"
+                            ],
+                            "price": 50,
+                            "hasOffer": 0,
+                            "offerPrice": 0,
+                            "quantity": 0,
+                            "weight": "1 kg",
+                            "subCatID": 44
+                        },
+                        {
+                            "name": "Chocolate cake",
+                            "image": "Chocolate.jpeg",
+                            "identifier": [
+                                "cake",
+                                "Birthday",
+                                "special",
+                                "chocolate"
+                            ],
+                            "price": 70,
+                            "hasOffer": 0,
+                            "offerPrice": 0,
+                            "quantity": 0,
+                            "weight": "1 kg",
+                            "subCatID": 45
+                        }
+                    ]
+                }
+            ]
+        }
     ]
 }

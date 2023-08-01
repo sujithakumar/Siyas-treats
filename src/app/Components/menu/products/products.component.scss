@@ -37,10 +37,20 @@
 
                 mat-card-subtitle {
                     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-                    color: black;
-                    font-size: 14px;
-                    font-weight: bold;
                     margin-bottom: 0.5rem;
+
+                    .subtitle{
+                        .txt{
+                            color: darkgray;
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                        .info{
+                            color: lightsalmon;
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                    }
                 }
 
                 mat-card-content {

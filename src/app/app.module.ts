@@ -1,6 +1,6 @@
 import { NgModule, isDevMode, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 //store
 import { StoreModule } from '@ngrx/store';
@@ -50,6 +50,7 @@ import { ChipsComponent } from './Components/menu/chips/chips.component';
     MaterialHelperModule,
     AppRoutingModule,
     ProfileModule,
+    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     // StoreModule.forRoot({ shop: MenuReducer }),

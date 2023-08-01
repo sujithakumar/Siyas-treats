@@ -1,5 +1,5 @@
 import { getKeyByValue } from "./genericHelpers";
-import { BASE_BUBBLETEA_MENU, BASE_KIDS_MENU, BASE_MENU_IMAGES_URL, BASE_MOUSSE_MENU, BASE_TEACOFFEE_MENU } from "./urls";
+import { BASE_BIRTHDAY_MENU, BASE_BUBBLETEA_MENU, BASE_KIDS_MENU, BASE_MENU_IMAGES_URL, BASE_MOUSSE_MENU, BASE_TEACOFFEE_MENU } from "./urls";
 
 const MENU = {
     "Hot": "Hot Beverages",
@@ -7,7 +7,7 @@ const MENU = {
     "Kids": "Kids Cakes",
     "love": "Lovers special",
     "swiss": "Swiss Rolls",
-    "bday": "birthday Cakes",
+    "Birthday": "birthday Cakes",
     "Mousse": "Mousse"
 }
 
@@ -75,6 +75,10 @@ function imageURLMapping(e: any, subcat: string) {
 
         case 'Kids':
             out = out + BASE_KIDS_MENU + "/" + e.image;
+            break;
+
+        case 'Birthday':
+            out = out + BASE_BIRTHDAY_MENU + "/" + e.image;
             break;
 
         default:
